@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <head>
+    <meta charset="utf-8">
+    <title>Vue.js Intro</title>
+  </head>
+</head>
+
+ <body>
+ 
+    <div id="vueApp">
+	<dog name="Roko" score="0"></dog>
+	<dog name="Jaro" score="0"></dog>
+    </div>
+	<template id="dog-template">
+		<div class="dogStuff">
+			<h3>{{name}} the dog</h3>
+			<p>Score: <b>{{score}}</b></p>
+			<button type="button" @click="voteDog">Vote!</button>
+		</div>
+		</template>
+		
+  <script src="src/vue.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+  </html>
